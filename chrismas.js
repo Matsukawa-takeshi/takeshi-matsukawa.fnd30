@@ -44,6 +44,7 @@ function butotnClick(){
       tree.style.letterSpacing = "-1em";
       screen.style.display = "flex";
       footer.style.display = "block";
+      snow.style.display = "none";
       if (hight === 20) {
         message.style.display = "block";
         let snowText = "";
