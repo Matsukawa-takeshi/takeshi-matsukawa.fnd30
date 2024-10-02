@@ -21,6 +21,7 @@ function butotnClick(){
     screen.style.display = "none";
     footer.style.display = "none";
     message.style.display = "none";
+    snow.style.display = "none";
     alert("1-20までの高さを入力してください。");
   } else {
     if(checkValue === "Window"){
