@@ -11,6 +11,11 @@ function butotnClick(){
   const snow = document.getElementsByClassName("snow")[0];
   let elements = document.getElementsByName('show');
   let checkValue = "";
+
+  screen.style.display = "none";
+  footer.style.display = "none";
+  message.style.display = "none";
+  snow.style.display = "none";
   
   for (let i = 0; i < elements.length; i++){
       if (elements.item(i).checked){
@@ -18,10 +23,6 @@ function butotnClick(){
       }
   }
   if (hight > 20 && checkValue === "Window") { 
-    screen.style.display = "none";
-    footer.style.display = "none";
-    message.style.display = "none";
-    snow.style.display = "none";
     alert("1-20までの高さを入力してください。");
   } else {
     if(checkValue === "Window"){
@@ -44,7 +45,6 @@ function butotnClick(){
       tree.style.letterSpacing = "-1em";
       screen.style.display = "flex";
       footer.style.display = "block";
-      snow.style.display = "none";
       if (hight === 20) {
         message.style.display = "block";
         let snowText = "";
